@@ -34,6 +34,24 @@ justify-content: center;
 }
 ```
 
+###　擬似要素でh1の横に縦ボーダー出すやつ
+```
+h1:before{
+    position: absolute;
+    content: '';
+    left: -5px;
+    border: 1.5px solid #ff6f11;
+    /* どちらか使える　*/
+    /* border-left: solid 5px #7db4e6; */ 
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 15px;
+}
+
+```
+
 ### memo
 ```
 padding margin は極力％で  
@@ -47,4 +65,9 @@ box-sizing
 boderbox  
 使っていく  
 box-sizing: border-box;
+
+上下真ん中のとき
+親がvhなら
+min px指定して　height を　vhでいれる
+
 ```
